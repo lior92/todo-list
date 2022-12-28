@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(223, 243, 236);
+}
+#root {
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Login page*/
+
+.login {
+  margin: 5%;
+}
+
+.register {
+  margin-left: 5%;
+}
+
+/* Register page */
+
+.register_header {
+  margin-top: 5%;
+}
+
+.submit {
+  margin-right: 5%;
+}
+
+.register_form {
+  margin-bottom: 5%;
+}
+
+/*user page*/
+
+.user_page_header {
+  margin-top: 3%;
+  color: rgb(38, 124, 204);
+}
+
+.mission_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
+  .mission_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .mission_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 430px) {
+  .mission_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.textarea_part {
+  display: flex;
+  align-items: center;
+}
+.add_mission_btn {
+  margin-left: 5%;
+}
+
+.mission {
+  width: 200px;
+  background: #83cde8;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  border-radius: 4%;
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.logo_btn {
+  font-size: 50%;
+  margin-left: 5%;
+  margin-bottom: 4%;
+  cursor: pointer;
+  box-shadow: 3px 5px 5px #888888;
+  border-radius: 20%;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+.logo_btn:hover {
+  background-color: rgb(187, 187, 187);
+  /*  Making button bigger on hover  */
+  transform: scale(1.5) perspective(1px);
+}
+
+.mission > h5 {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2%;
+  margin: 0;
+}
+.mission > p {
+  padding: 2%;
+  font-size: 0.8rem;
+}
+
+/*Mark as done*/
+
+.done > h5 {
+  text-decoration: line-through;
+}
